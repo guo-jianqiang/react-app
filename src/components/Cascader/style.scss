@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1618700 */
+  src: url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.eot');
+  src: url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1618700_81zsz3u0fme.svg#iconfont') format('svg');
+}
+.cascader{
+  font-family: 'iconfont';
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  &-list{
+    position: relative;
+    //width: 200px;
+    padding: 16px;
+    &:first-child::after{
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background: #ccc;
+    }
+    &-item{
+      //display: inline-block;/
+      cursor: pointer;
+      line-height: 1.5;
+      &:hover{
+        color: #1890ff;
+      }
+    }
+    &-active{
+      color: #1890f1;
+      &:after{
+        padding-left: 8px;
+        display: inline-block;
+        content: '\e611';
+      }
+    }
+  }
+}
